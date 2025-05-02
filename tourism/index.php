@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="" style="height: auto;">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <?php require_once('config.php'); ?>
- <?php require_once('inc/header.php') ?>
-  <body class="hold-transition layout-top-nav" >
+ <?php require_once('./inc/header.php') ?>
+  <body class="hold-transition layout-top-nav top" >
      <?php $page = isset($_GET['page']) ? $_GET['page'] : 'portal';  ?>
-     <?php require_once('inc/topBarNav.php') ?>
+     <?php require_once('./inc/topBarNav.php') ?>
      <?php 
         if(!file_exists($page.".php") && !is_dir($page)){
             include '404.html';
@@ -22,7 +25,7 @@
             $('#mainNav').addClass('navbar-shrink')
         })
       </script>
-      <?php require_once('inc/footer.php') ?>
+      <?php require_once('./inc/footer.php') ?>
       <div class="modal fade text-dark" id="confirm_modal" role='dialog'>
     <div class="modal-dialog modal-md modal-dialog-centered" role="document">
       <div class="modal-content">

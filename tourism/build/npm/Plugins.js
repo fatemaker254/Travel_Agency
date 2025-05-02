@@ -13,7 +13,7 @@ const Plugins = [
   },
   // Bootstrap
   {
-    from: 'node_modules/bootstrap/dist/js',
+    from: 'node_modules/bootstrap/./dist/js',
     to: 'plugins/bootstrap/js'
   },
   // Font Awesome
@@ -36,17 +36,17 @@ const Plugins = [
   },
   // Chart.js
   {
-    from: 'node_modules/chart.js/dist/',
+    from: 'node_modules/chart.js/./dist/',
     to: 'plugins/chart.js'
   },
   // jQuery UI
   {
-    from: 'node_modules/jquery-ui-dist/',
+    from: 'node_modules/jquery-ui-./dist/',
     to: 'plugins/jquery-ui'
   },
   // Flot
   {
-    from: 'node_modules/flot/dist/es5/',
+    from: 'node_modules/flot/./dist/es5/',
     to: 'plugins/flot'
   },
   {
@@ -55,34 +55,34 @@ const Plugins = [
   },
   // Summernote
   {
-    from: 'node_modules/summernote/dist/',
+    from: 'node_modules/summernote/./dist/',
     to: 'plugins/summernote'
   },
   // Bootstrap Slider
   {
-    from: 'node_modules/bootstrap-slider/dist/',
+    from: 'node_modules/bootstrap-slider/./dist/',
     to: 'plugins/bootstrap-slider'
   },
   {
-    from: 'node_modules/bootstrap-slider/dist/css',
+    from: 'node_modules/bootstrap-slider/./dist/css',
     to: 'plugins/bootstrap-slider/css'
   },
   // Bootstrap Colorpicker
   {
-    from: 'node_modules/bootstrap-colorpicker/dist/js',
+    from: 'node_modules/bootstrap-colorpicker/./dist/js',
     to: 'plugins/bootstrap-colorpicker/js'
   },
   {
-    from: 'node_modules/bootstrap-colorpicker/dist/css',
+    from: 'node_modules/bootstrap-colorpicker/./dist/css',
     to: 'plugins/bootstrap-colorpicker/css'
   },
   // Tempusdominus Bootstrap 4
   {
-    from: 'node_modules/tempusdominus-bootstrap-4/build/js',
+    from: 'node_modules/tempusdominus-bootstrap-4/./build/js',
     to: 'plugins/tempusdominus-bootstrap-4/js'
   },
   {
-    from: 'node_modules/tempusdominus-bootstrap-4/build/css',
+    from: 'node_modules/tempusdominus-bootstrap-4/./build/css',
     to: 'plugins/tempusdominus-bootstrap-4/css'
   },
   // Moment
@@ -282,7 +282,7 @@ const Plugins = [
   },
   // inputmask
   {
-    from: 'node_modules/inputmask/dist/',
+    from: 'node_modules/inputmask/./dist/',
     to: 'plugins/inputmask'
   },
   // ion-rangeslider
@@ -292,7 +292,7 @@ const Plugins = [
   },
   // JQVMap (jqvmap-novulnerability)
   {
-    from: 'node_modules/jqvmap-novulnerability/dist/',
+    from: 'node_modules/jqvmap-novulnerability/./dist/',
     to: 'plugins/jqvmap'
   },
   // jQuery Mapael
@@ -312,21 +312,21 @@ const Plugins = [
   },
   // jQuery Knob
   {
-    from: 'node_modules/jquery-knob-chif/dist/',
+    from: 'node_modules/jquery-knob-chif/./dist/',
     to: 'plugins/jquery-knob'
   },
   // pace-progress
   {
-    from: 'node_modules/@lgaitan/pace-progress/dist/',
+    from: 'node_modules/@lgaitan/pace-progress/./dist/',
     to: 'plugins/pace-progress'
   },
   // Select2
   {
-    from: 'node_modules/select2/dist/',
+    from: 'node_modules/select2/./dist/',
     to: 'plugins/select2'
   },
   {
-    from: 'node_modules/@ttskch/select2-bootstrap4-theme/dist/',
+    from: 'node_modules/@ttskch/select2-bootstrap4-theme/./dist/',
     to: 'plugins/select2-bootstrap4-theme'
   },
   // Sparklines
@@ -336,7 +336,7 @@ const Plugins = [
   },
   // SweetAlert2
   {
-    from: 'node_modules/sweetalert2/dist/',
+    from: 'node_modules/sweetalert2/./dist/',
     to: 'plugins/sweetalert2'
   },
   {
@@ -345,7 +345,7 @@ const Plugins = [
   },
   // Toastr
   {
-    from: 'node_modules/toastr/build/',
+    from: 'node_modules/toastr/./build/',
     to: 'plugins/toastr'
   },
   // jsGrid
@@ -388,17 +388,17 @@ const Plugins = [
   },
   // jQuery Validate
   {
-    from: 'node_modules/jquery-validation/dist/',
+    from: 'node_modules/jquery-validation/./dist/',
     to: 'plugins/jquery-validation'
   },
   // bs-custom-file-input
   {
-    from: 'node_modules/bs-custom-file-input/dist/',
+    from: 'node_modules/bs-custom-file-input/./dist/',
     to: 'plugins/bs-custom-file-input'
   },
   // bs-stepper
   {
-    from: 'node_modules/bs-stepper/dist/',
+    from: 'node_modules/bs-stepper/./dist/',
     to: 'plugins/bs-stepper'
   },
   // CodeMirror
@@ -424,12 +424,12 @@ const Plugins = [
   },
   // dropzonejs
   {
-    from: 'node_modules/dropzone/dist/',
+    from: 'node_modules/dropzone/./dist/',
     to: 'plugins/dropzone'
   },
   // uPlot
   {
-    from: 'node_modules/uplot/dist/',
+    from: 'node_modules/uplot/./dist/',
     to: 'plugins/uplot'
   }
 ]

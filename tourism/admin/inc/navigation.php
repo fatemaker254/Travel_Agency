@@ -36,7 +36,7 @@
                       </a>
                     </li> 
                     <li class="nav-item dropdown">
-                      <a href="<?php echo base_url ?>admin/?page=packages" class="nav-link nav-packages">
+                      <a href="<?php echo base_url ?>./admin/?page=packages" class="nav-link nav-packages">
                         <i class="nav-icon fas fa-map-marked"></i>
                         <p>
                           Packages
@@ -44,7 +44,7 @@
                       </a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="<?php echo base_url ?>admin/?page=books" class="nav-link nav-books">
+                      <a href="<?php echo base_url ?>./admin/?page=books" class="nav-link nav-books">
                         <i class="nav-icon fas fa-th-list"></i>
                         <p>
                           Bookings
@@ -52,7 +52,7 @@
                       </a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="<?php echo base_url ?>admin/?page=inquiries" class="nav-link nav-inquiries">
+                      <a href="<?php echo base_url ?>./admin/?page=inquiries" class="nav-link nav-inquiries">
                         <i class="nav-icon fas fa-question-circle"></i>
                         <p>
                         Inquiries
@@ -60,7 +60,7 @@
                       </a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="<?php echo base_url ?>admin/?page=review" class="nav-link nav-review">
+                      <a href="<?php echo base_url ?>./admin/?page=review" class="nav-link nav-review">
                         <i class="nav-icon fas fa-comment-alt"></i>
                         <p>
                         Rate & Reviews
@@ -68,7 +68,7 @@
                       </a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="<?php echo base_url ?>admin/?page=system_info" class="nav-link nav-system_info">
+                      <a href="<?php echo base_url ?>./admin/?page=system_info" class="nav-link nav-system_info">
                         <i class="nav-icon fas fa-cogs"></i>
                         <p>
                           Settings

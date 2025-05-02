@@ -2,7 +2,9 @@
     #uni_modal .modal-content>.modal-footer,#uni_modal .modal-content>.modal-header{
         display:none;
     }
+    
 </style>
+
 <div class="container-fluid">
     <h3 class="float-left">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -62,7 +64,7 @@
             if($('.err-msg').length > 0)
                 $('.err-msg').remove();
             $.ajax({
-                url:_base_url_+"classes/Master.php?f=register",
+                url:_base_url_+"./classes/Master.php?f=register",
                 method:"POST",
                 data:$(this).serialize(),
                 dataType:"json",
@@ -97,7 +99,7 @@
             if($('.err-msg').length > 0)
                 $('.err-msg').remove();
             $.ajax({
-                url:_base_url_+"classes/Login.php?f=login_user",
+                url:_base_url_+"./classes/Login.php?f=login_user",
                 method:"POST",
                 data:$(this).serialize(),
                 dataType:"json",

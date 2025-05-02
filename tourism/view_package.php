@@ -20,12 +20,12 @@ while($row= $review->fetch_assoc()){
 if($rate > 0 && $review_count > 0)
 $rate = number_format($rate/$review_count,0,"");
 $files = array();
-if(is_dir(base_app.'uploads/package_'.$id)){
-    $ofile = scandir(base_app.'uploads/package_'.$id);
+if(is_dir(base_app.'./uploads/package_'.$id)){
+    $ofile = scandir(base_app.'./uploads/package_'.$id);
     foreach($ofile as $img){
         if(in_array($img,array('.','..')))
         continue;
-        $files[] = validate_image('uploads/package_'.$id.'/'.$img);
+        $files[] = validate_image('./uploads/package_'.$id.'/'.$img);
     }
 }
 }
@@ -82,7 +82,7 @@ if(is_dir(base_app.'uploads/package_'.$id)){
                 <?php foreach($feed as $r): ?>
                 <div class="w-100 d-flex justify-content-between  align-items-center">
                     <div class="d-flex align-items-center">
-                        <img src="<?php echo validate_image('assets/img/user.jpg') ?>" class="border mr-3 review-user-avatar" alt="">
+                        <img src="<?php echo validate_image(' ./assets/img/user.jpg') ?>" class="border mr-3 review-user-avatar" alt="">
                         <span><?php echo $r['name'] ?></span>
                     </div>
                     <span class='text-muted'><?php echo date("Y-m-d H:i A",strtotime($r['date_created'])) ?></span>

@@ -87,7 +87,7 @@
 	function delete_booking($id){
 		start_loader();
 		$.ajax({
-			url:_base_url_+"classes/Master.php?f=delete_booking",
+			url:_base_url_+"./classes/Master.php?f=delete_booking",
 			method:"POST",
 			data:{id: $id},
 			dataType:"json",

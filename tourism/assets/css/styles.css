@@ -659,12 +659,14 @@ progress {
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
     margin-left: auto;
+
 }
 
 @media (min-width: 576px) {
     .container-sm,
     .container {
-        max-width: 540px;
+        /* max-width: 540px; */
+        max-width: 100%;
     }
 }
 
@@ -672,7 +674,8 @@ progress {
     .container-md,
     .container-sm,
     .container {
-        max-width: 720px;
+        /* max-width: 720px; */
+        max-width: 100%;
     }
 }
 
@@ -681,7 +684,8 @@ progress {
     .container-md,
     .container-sm,
     .container {
-        max-width: 960px;
+        /* max-width: 960px; */
+        max-width: 100%;
     }
 }
 
@@ -691,7 +695,9 @@ progress {
     .container-md,
     .container-sm,
     .container {
-        max-width: 1140px;
+        /* max-width: 1140px; */
+
+        max-width: 100%;
     }
 }
 
@@ -702,7 +708,8 @@ progress {
     .container-md,
     .container-sm,
     .container {
-        max-width: 1320px;
+        /* max-width: 1320px; */
+        max-width: 100%;
     }
 }
 
@@ -10702,6 +10709,7 @@ p {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1.125rem;
     font-weight: 700;
+    width: fit-content;
 }
 
 .btn-social {
@@ -10717,7 +10725,7 @@ p {
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #00000012;
+    background-color: transparent;
 }
 
 #mainNav .navbar-toggler {
@@ -10793,11 +10801,11 @@ p {
 }
 
 header.masthead {
-    padding-top: 10.5rem;
-    padding-bottom: 6rem;
+    /* padding-top: 10.5rem;
+    padding-bottom: 6rem; */
     text-align: center;
     color: #fff;
-    background-image: url("../assets/img/header-bg.jpg");
+    background-image: url("../img/header-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -10822,8 +10830,8 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
     header.masthead {
-        padding-top: 17rem;
-        padding-bottom: 12.5rem;
+        /* padding-top: 17rem;
+        padding-bottom: 12.5rem; */
     }
     header.masthead .masthead-subheading {
         font-size: 2.25rem;
@@ -11155,7 +11163,7 @@ header.masthead .masthead-heading {
 
 section#contact {
     background-color: #212529;
-    background-image: url("../assets/img/map-image.png");
+    background-image: url("../img/map-image.png");
     background-repeat: no-repeat;
     background-position: center;
 }

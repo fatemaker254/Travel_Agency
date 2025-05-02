@@ -80,7 +80,7 @@
 	function delete_package($id){
 		start_loader();
 		$.ajax({
-			url:_base_url_+"classes/Master.php?f=delete_package",
+			url:_base_url_+"./classes/Master.php?f=delete_package",
 			method:"POST",
 			data:{id: $id},
 			dataType:"json",

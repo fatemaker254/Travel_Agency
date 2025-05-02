@@ -27,9 +27,9 @@
     <!-- JQVMap -->
     <link rel="stylesheet" href="<?php echo base_url ?>plugins/jqvmap/jqvmap.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="<?php echo base_url ?>dist/css/adminlte.css">
-    <link rel="stylesheet" href="<?php echo base_url ?>dist/css/custom.css">
-    <link rel="stylesheet" href="<?php echo base_url ?>assets/css/styles.css">
+    <link rel="stylesheet" href="<?php echo base_url ?>./dist/css/adminlte.css">
+    <link rel="stylesheet" href="<?php echo base_url ?>./dist/css/custom.css">
+    <link rel="stylesheet" href="<?php echo base_url ?>./assets/css/styles.css">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="<?php echo base_url ?>plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Daterange picker -->
@@ -38,6 +38,8 @@
     <link rel="stylesheet" href="<?php echo base_url ?>plugins/summernote/summernote-bs4.min.css">
      <!-- SweetAlert2 -->
   <link rel="stylesheet" href="<?php echo base_url ?>plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+
+  
     <style type="text/css">/* Chart.js */
       @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}
     </style>
@@ -53,7 +55,7 @@
     <script>
         var _base_url_ = '<?php echo base_url ?>';
     </script>
-    <script src="<?php echo base_url ?>dist/js/script.js"></script>
-    <script src="<?php echo base_url ?>assets/js/scripts.js"></script>
+    <script src="<?php echo base_url ?>./dist/js/script.js"></script>
+    <script src="<?php echo base_url ?>./assets/js/scripts.js"></script>
 
   </head>

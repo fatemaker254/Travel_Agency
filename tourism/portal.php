@@ -4,7 +4,18 @@
 		background-image: url('<?php echo validate_image($_settings->info('cover')) ?>') !important;
 	}
 	header.masthead .container{
-		background:#0000006b;
+		/* background:#0000006b; */
+		/* background: url('../assets/images/hero-banner.jpg'); */
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('../assets/images/hero-banner.jpg') no-repeat center center;
+  background-size: cover;
+		height: 70vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
 	}
 </style>
 <!-- Masthead-->
@@ -27,15 +38,15 @@
 		$packages = $conn->query("SELECT * FROM `packages` order by rand() limit 3");
 			while($row = $packages->fetch_assoc() ):
 				$cover='';
-				if(is_dir(base_app.'uploads/package_'.$row['id'])){
-					$img = scandir(base_app.'uploads/package_'.$row['id']);
+				if(is_dir(base_app.'./uploads/package_'.$row['id'])){
+					$img = scandir(base_app.'./uploads/package_'.$row['id']);
 					$k = array_search('.',$img);
 					if($k !== false)
 						unset($img[$k]);
 					$k = array_search('..',$img);
 					if($k !== false)
 						unset($img[$k]);
-					$cover = isset($img[2]) ? 'uploads/package_'.$row['id'].'/'.$img[2] : "";
+					$cover = isset($img[2]) ? './uploads/package_'.$row['id'].'/'.$img[2] : "";
 				}
 				$row['description'] = strip_tags(stripslashes(html_entity_decode($row['description'])));
 
@@ -46,7 +57,8 @@
 					$rate += $r['rate'];
 				}
 				if($rate > 0 && $review_count > 0)
-				$rate = number_format($rate/$review_count,0,"");
+				$rate = number_format($rate / $review_count, 0, '.', ''); // No decimal or thousands separator
+
 		?>
 			<div class="col-md-4 p-4 ">
 				<div class="card w-100 rounded-0">
@@ -136,7 +148,7 @@ $(function(){
 	$('#contactForm').submit(function(e){
 		e.preventDefault()
 		$.ajax({
-			url:_base_url_+"classes/Master.php?f=save_inquiry",
+			url:_base_url_+"./classes/Master.php?f=save_inquiry",
 			method:"POST",
 			data:$(this).serialize(),
 			dataType:"json",

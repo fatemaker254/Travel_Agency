@@ -83,7 +83,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
         start_loader()
         
         $.ajax({
-            url: _base_url_+'classes/Master.php?f=delete_p_img',
+            url: _base_url_+'./classes/Master.php?f=delete_p_img',
             data:{path:$path},
             method:'POST',
             dataType:"json",
@@ -116,7 +116,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 			 $('.err-msg').remove();
 			start_loader();
 			$.ajax({
-				url:_base_url_+"classes/Master.php?f=save_package",
+				url:_base_url_+"./classes/Master.php?f=save_package",
 				data: new FormData($(this)[0]),
                 cache: false,
                 contentType: false,

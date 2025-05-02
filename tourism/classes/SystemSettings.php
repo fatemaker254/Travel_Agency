@@ -46,7 +46,7 @@ class SystemSettings extends DBConnection{
 			file_put_contents('../privacy_policy.html',$_POST['privacy_policy']);
 		}
 		if(isset($_FILES['img']) && $_FILES['img']['tmp_name'] != ''){
-			$fname = 'uploads/'.strtotime(date('y-m-d H:i')).'_'.$_FILES['img']['name'];
+			$fname = './uploads/'.strtotime(date('y-m-d H:i')).'_'.$_FILES['img']['name'];
 			$move = move_uploaded_file($_FILES['img']['tmp_name'],'../'. $fname);
 			if(isset($_SESSION['system_info']['logo'])){
 				$qry = $this->conn->query("UPDATE system_info set meta_value = '{$fname}' where meta_field = 'logo' ");
@@ -56,7 +56,7 @@ class SystemSettings extends DBConnection{
 			}
 		}
 		if(isset($_FILES['cover']) && $_FILES['cover']['tmp_name'] != ''){
-			$fname = 'uploads/'.strtotime(date('y-m-d H:i')).'_'.$_FILES['cover']['name'];
+			$fname = './uploads/'.strtotime(date('y-m-d H:i')).'_'.$_FILES['cover']['name'];
 			$move = move_uploaded_file($_FILES['cover']['tmp_name'],'../'. $fname);
 			if(isset($_SESSION['system_info']['cover'])){
 				$qry = $this->conn->query("UPDATE system_info set meta_value = '{$fname}' where meta_field = 'cover' ");
