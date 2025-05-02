@@ -33,7 +33,7 @@
             e.preventDefault();
             start_loader()
             $.ajax({
-                url:_base_url_+"classes/Master.php?f=rate_review",
+                url:_base_url_+"./classes/Master.php?f=rate_review",
                 method:"POST",
                 data:$(this).serialize(),
                 dataType:"json",

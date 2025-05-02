@@ -11,10 +11,10 @@ const banner = `/*!
  */`
 
 module.exports = {
-  input: 'build/js/AdminLTE.js',
+  input: './build/js/AdminLTE.js',
   output: {
     banner,
-    file: 'dist/js/adminlte.js',
+    file: './dist/js/adminlte.js',
     format: 'umd',
     globals: {
       jquery: 'jQuery'

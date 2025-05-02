@@ -23,7 +23,7 @@
                     <img src="<?php echo validate_image($_settings->userdata('avatar')) ?>" class="img-circle elevation-2" alt="User Image" style="height: 2rem;object-fit: cover">
                   </div>
                   <div class="info">
-                    <a href="<?php echo base_url ?>admin/?page=user" class="d-block"><?php echo ucwords($_settings->userdata('firstname').' '.$_settings->userdata('lastname')) ?></a>
+                    <a href="<?php echo base_url ?>./admin/?page=user" class="d-block"><?php echo ucwords($_settings->userdata('firstname').' '.$_settings->userdata('lastname')) ?></a>
                   </div>
                 </div>
                 <!-- Sidebar Menu -->
@@ -39,7 +39,7 @@
                     </li> 
                     <li class="nav-header">Master List</li>
                     <li class="nav-item dropdown">
-                      <a href="<?php echo base_url ?>admin/?page=people" class="nav-link nav-people">
+                      <a href="<?php echo base_url ?>./admin/?page=people" class="nav-link nav-people">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
                           Individuals List
@@ -47,7 +47,7 @@
                       </a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="<?php echo base_url ?>admin/?page=establishment" class="nav-link nav-establishment">
+                      <a href="<?php echo base_url ?>./admin/?page=establishment" class="nav-link nav-establishment">
                         <i class="nav-icon fas fa-building"></i>
                         <p>
                           Establishment List
@@ -56,7 +56,7 @@
                     </li>
                     <li class="nav-header">Maintenance</li>
                     <li class="nav-item dropdown">
-                      <a href="<?php echo base_url ?>admin/?page=state" class="nav-link nav-state">
+                      <a href="<?php echo base_url ?>./admin/?page=state" class="nav-link nav-state">
                         <i class="nav-icon fas fa-map-marker-alt"></i>
                         <p>
                           State/Province List
@@ -64,7 +64,7 @@
                       </a>
                     </li> 
                     <li class="nav-item dropdown">
-                      <a href="<?php echo base_url ?>admin/?page=city" class="nav-link nav-city">
+                      <a href="<?php echo base_url ?>./admin/?page=city" class="nav-link nav-city">
                         <i class="nav-icon fas fa-map-marker"></i>
                         <p>
                           City List
@@ -72,7 +72,7 @@
                       </a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="<?php echo base_url ?>admin/?page=zone" class="nav-link nav-zone">
+                      <a href="<?php echo base_url ?>./admin/?page=zone" class="nav-link nav-zone">
                         <i class="nav-icon fas fa-layer-group"></i>
                         <p>
                           Barangay/Zone List

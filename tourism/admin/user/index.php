@@ -76,7 +76,7 @@ foreach($user->fetch_array() as $k =>$v){
 		e.preventDefault();
 		start_loader()
 		$.ajax({
-			url:_base_url_+'classes/Users.php?f=save',
+			url:_base_url_+'./classes/Users.php?f=save',
 			data: new FormData($(this)[0]),
 		    cache: false,
 		    contentType: false,

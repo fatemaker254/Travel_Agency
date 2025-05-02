@@ -1,11 +1,11 @@
 <?php require_once('../config.php'); ?>
  <!DOCTYPE html>
 <html lang="en" class="" style="height: auto;">
-<?php require_once('inc/header.php') ?>
+<?php require_once('./inc/header.php') ?>
   <body class="layout-fixed layout-footer-fixed text-sm sidebar-mini control-sidebar-slide-open layout-navbar-fixed text-dark" data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="" style="height: auto;">
     <div class="wrapper">
-     <?php require_once('inc/topBarNav.php') ?>
-     <?php require_once('inc/navigation.php') ?>
+     <?php require_once('./inc/topBarNav.php') ?>
+     <?php require_once('./inc/navigation.php') ?>
               
      <?php $page = isset($_GET['page']) ? $_GET['page'] : 'home';  ?>
       <!-- Content Wrapper. Contains page content -->
@@ -103,6 +103,6 @@
   </div>
       </div>
       <!-- /.content-wrapper -->
-      <?php require_once('inc/footer.php') ?>
+      <?php require_once('./inc/footer.php') ?>
   </body>
 </html>

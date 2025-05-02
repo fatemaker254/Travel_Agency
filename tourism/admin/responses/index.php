@@ -65,7 +65,7 @@
 	function delete_question($id){
 		start_loader();
 		$.ajax({
-			url:_base_url_+"classes/Master.php?f=delete_response",
+			url:_base_url_+"./classes/Master.php?f=delete_response",
 			method:"POST",
 			data:{id: $id},
 			error:err=>{

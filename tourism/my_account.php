@@ -73,7 +73,7 @@
     function cancel_book($id){
         start_loader()
         $.ajax({
-            url:_base_url_+"classes/Master.php?f=update_book_status",
+            url:_base_url_+"./classes/Master.php?f=update_book_status",
             method:"POST",
             data:{id:$id,status:2},
             dataType:"json",

@@ -39,7 +39,7 @@ if(isset($_GET['id'])){
             e.preventDefault();
             start_loader()
             $.ajax({
-                url:_base_url_+"classes/Master.php?f=update_book_status",
+                url:_base_url_+"./classes/Master.php?f=update_book_status",
                 method:"POST",
                 data:$(this).serialize(),
                 dataType:"json",

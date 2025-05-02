@@ -34,15 +34,15 @@ Class Master extends DBConnection {
 		}
 		if($save){
 			if(isset($_FILES['img']) && count($_FILES['img']['tmp_name']) > 0){
-				if(!is_dir(base_app.'uploads/package_'.$id)){
-					mkdir(base_app.'uploads/package_'.$id);
-					$data = " `upload_path`= 'uploads/package_{$id}' ";
+				if(!is_dir(base_app.'./uploads/package_'.$id)){
+					mkdir(base_app.'./uploads/package_'.$id);
+					$data = " `upload_path`= './uploads/package_{$id}' ";
 				}else{
-					$data = " `upload_path`= 'uploads/package_{$id}' ";
+					$data = " `upload_path`= './uploads/package_{$id}' ";
 				}
 				$this->conn->query("UPDATE `packages` set {$data} where id = '{$id}' ");
 				foreach($_FILES['img']['tmp_name'] as $k =>$v){
-					move_uploaded_file($_FILES['img']['tmp_name'][$k],base_app.'uploads/package_'.$id.'/'.$_FILES['img']['name'][$k]);
+					move_uploaded_file($_FILES['img']['tmp_name'][$k],base_app.'./uploads/package_'.$id.'/'.$_FILES['img']['name'][$k]);
 				}
 			}
 
@@ -75,14 +75,14 @@ Class Master extends DBConnection {
 		$del = $this->conn->query("DELETE FROM `packages` where id = '{$id}'");
 		if($del){
 			$resp['status'] = 'success';
-			if(is_dir(base_app.'uploads/package_'.$id)){
-				$file = scandir(base_app.'uploads/package_'.$id);
+			if(is_dir(base_app.'./uploads/package_'.$id)){
+				$file = scandir(base_app.'./uploads/package_'.$id);
 				foreach($file as $img){
 					if(in_array($img,array('..','.')))
 						continue;
-					unlink(base_app.'uploads/package_'.$id.'/'.$img);
+					unlink(base_app.'./uploads/package_'.$id.'/'.$img);
 				}
-				rmdir(base_app.'uploads/package_'.$id);
+				rmdir(base_app.'./uploads/package_'.$id);
 			}
 			$this->settings->set_flashdata('success',"Tour Package successfully deleted.");
 		}else{

@@ -108,7 +108,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 			}
 			start_loader();
 			$.ajax({
-				url:_base_url_+"classes/Master.php?f=save_response",
+				url:_base_url_+"./classes/Master.php?f=save_response",
 				method:'POST',
 				data:$(this).serialize(),
 				error:err=>{

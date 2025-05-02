@@ -74,7 +74,7 @@
 	function delete_review($id){
 		start_loader();
 		$.ajax({
-			url:_base_url_+"classes/Master.php?f=delete_review",
+			url:_base_url_+"./classes/Master.php?f=delete_review",
 			method:"POST",
 			data:{id: $id},
 			dataType:"json",

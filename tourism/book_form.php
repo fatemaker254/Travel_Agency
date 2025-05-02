@@ -12,7 +12,7 @@
             e.preventDefault();
             start_loader()
             $.ajax({
-                url:_base_url_+"classes/Master.php?f=book_tour",
+                url:_base_url_+"./classes/Master.php?f=book_tour",
                 method:"POST",
                 data:$(this).serialize(),
                 dataType:"json",

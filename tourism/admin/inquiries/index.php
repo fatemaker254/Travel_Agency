@@ -81,7 +81,7 @@
 	function delete_inquiry($id){
 		start_loader();
 		$.ajax({
-			url:_base_url_+"classes/Master.php?f=delete_inquiry",
+			url:_base_url_+"./classes/Master.php?f=delete_inquiry",
 			method:"POST",
 			data:{id: $id},
 			dataType:"json",
