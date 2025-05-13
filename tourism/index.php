@@ -6,6 +6,7 @@
 <?php require_once('config.php'); ?>
  <?php require_once('./inc/header.php') ?>
   <body class="hold-transition layout-top-nav top" >
+    <?php include 'popup.php'; ?>
      <?php $page = isset($_GET['page']) ? $_GET['page'] : 'portal';  ?>
      <?php require_once('./inc/topBarNav.php') ?>
      <?php 
