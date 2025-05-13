@@ -7,9 +7,9 @@
 		/* background:#0000006b; */
 		/* background: url('../assets/images/hero-banner.jpg'); */
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-              url('../assets/images/hero-banner.jpg') no-repeat center center;
+              url('../assets/images/hero-banner.jpg') no-repeat center center ;
   background-size: cover;
-		height: 70vh;
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -17,11 +17,28 @@
 		text-align: center;
 
 	}
+	.map-container {
+            position: relative;
+            width: 80%;
+            padding-top: 33.25%; /* Aspect ratio 16:9 */
+            margin: 20px auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
 </style>
 <!-- Masthead-->
 <header class="masthead">
 	<div class="container">
-		<div class="masthead-subheading">Welcome To TMS- Site</div>
+		<div class="masthead-subheading">Welcome To Photine Travels</div>
 		<div class="masthead-heading text-uppercase">Explore our Tour Packages</div>
 		<a class="btn btn-primary btn-xl text-uppercase" href="#home">View Tours</a>
 	</div>
@@ -142,6 +159,15 @@
 			<div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
 		</form>
 	</div>
+	<div class="map-container">
+          <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.1891047680265!2d88.31944817434962!3d22.459526937106975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027b13f86977c5%3A0x2d4697cb923316c6!2sA%20Technologies!5e0!3m2!1sen!2sin!4v1732813514879!5m2!1sen!2sin"
+              class="responsive-iframe"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+      </div>
 </section>
 <script>
 $(function(){
