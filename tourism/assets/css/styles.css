@@ -10800,9 +10800,9 @@ p {
     }
 }
 
-header.masthead {
+/* header.masthead {
     /* padding-top: 10.5rem;
-    padding-bottom: 6rem; */
+    padding-bottom: 6rem; *
     text-align: center;
     color: #fff;
     background-image: url("../img/header-bg.jpg");
@@ -10831,7 +10831,7 @@ header.masthead .masthead-heading {
 @media (min-width: 768px) {
     header.masthead {
         /* padding-top: 17rem;
-        padding-bottom: 12.5rem; */
+        padding-bottom: 12.5rem; *
     }
     header.masthead .masthead-subheading {
         font-size: 2.25rem;
@@ -10845,7 +10845,7 @@ header.masthead .masthead-heading {
         line-height: 4.5rem;
         margin-bottom: 4rem;
     }
-}
+} */
 
 #portfolio .portfolio-item {
     max-width: 26rem;

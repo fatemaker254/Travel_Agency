@@ -102,7 +102,7 @@
         <!-- Brand & description -->
         <div class="col-lg-4 col-md-6">
           <a href="<?php echo base_url ?>" class="logo d-inline-flex align-items-center mb-3">
-            <img src="<?php echo base_url ?>../assets/images/logo.png"
+            <img src="<?php echo base_url ?>./assets/images/logo.png"
                  alt="logo?> logo"
                  class="me-2">
           </a>
@@ -162,7 +162,7 @@
       <p class="mb-2 mb-md-0">
         <!-- &copy; <?php echo date('Y') ?>
         <a href="#" class="text-reset fw-bold"><?php echo $_settings->info('short_name') ?></a>. -->
-        All rights reserved
+        &copy; All rights reserved
       </p>
 
       <ul class="footer-bottom-list">

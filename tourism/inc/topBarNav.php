@@ -4,7 +4,7 @@
 
     <!-- logo -------------------------------------------------------------->
     <a class="navbar-brand d-flex align-items-center" href="#page-top">
-      <img src="../assets/images/logo1.png"
+      <img src="./assets/images/logo1.png"
            alt="Tourism11 logo"
            class="logo-img me-2"
            style="width: 100px; height: 50px;">
@@ -70,13 +70,12 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link"
-             href="<?php echo $page != 'home' ? './' : '' ?>#about">About</a>
+        <a class="nav-link" href="<?php echo $page != 'home' ? './' : '' ?>?page=about">About</a>
+
         </li>
 
         <li class="nav-item">
-          <a class="nav-link"
-             href="<?php echo $page != 'home' ? './' : '' ?>#contact">Contact</a>
+          <a class="nav-link" href="<?php echo $page != 'home' ? './' : '' ?>?page=contact">Contact</a>
         </li>
 
         <?php if (isset($_SESSION['userdata'])): ?>
